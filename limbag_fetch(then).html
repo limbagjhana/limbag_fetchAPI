@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Fetch API</h1>
+    <h2>The Fetch() Method</h2>
+    <pre id = "songLyrics"> Fetch a file to change this text</pre>
+    <script>
+        let file = "musika.txt";
+        fetch(file)
+        .then(response => response.text())
+        .then(data => document.querySelector("#songLyrics").innerHTML = data);
+
+    </script>
+</body>
+</html>
